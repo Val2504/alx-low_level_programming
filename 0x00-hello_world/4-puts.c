@@ -1,11 +1,14 @@
 /*
- * this is a program that prints "Programming is like building a multilingual puzzle"
+ * an entry program
+ *
+ * returns 0
  */
 
-#include<stdio.h>
+#include <stdio.h>
 
 int main() {
-	putchar("Programming is like building a multilingual puzzle");
+	puts("Programming is like building a multilingual puzzle");
 
 	return 0;
+}
 
