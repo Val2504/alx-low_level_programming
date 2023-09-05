@@ -16,7 +16,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	for (len = 0; str[len]; len++)/* gets the lenth of the string */
-	tmp = malloc((len + 1) * sizeof(char));
+	tmp = malloc(sizeof(char) * (len + 1));
 
 	if (tmp == NULL)
 	{
