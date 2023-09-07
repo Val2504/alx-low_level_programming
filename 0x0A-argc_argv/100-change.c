@@ -39,5 +39,5 @@ int main(int argc, char *argv[])
 		printf("%d\n", small_coin);
 	}
 
-	return (0);
+	return ;
 }
