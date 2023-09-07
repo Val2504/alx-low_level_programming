@@ -26,13 +26,13 @@ int main(int argc, char *argv[])
 		{
 			if (cent >= 25)
 				cent = cent - 25;
-			if (cent >= 10)
+			else if (cent >= 10)
 				cent = cent - 10;
-			if (cent >= 5)
+			else if (cent >= 5)
 				cent = cent - 5;
-			if (cent >= 1)
+			else if (cent >= 1)
 				cent = cent - 1;
-			if (cent >= 2)
+			else if (cent >= 2)
 				cent = cent - 2;
 			small_coin = small_coin + 1;
 		}
