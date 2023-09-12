@@ -10,7 +10,7 @@
  * Description: this is a data structure with two char pointer which
  * is a string and a float data type
  */
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
