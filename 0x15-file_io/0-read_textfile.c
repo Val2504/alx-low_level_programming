@@ -12,7 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int tmp_pd;
 	ssize_t tmp_read, tmp_write;
-	const *buffer;
+	char *buffer;
 
 	if (!filename)
 		return (0);
@@ -31,7 +31,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(tmp_pd);
 		return (0);
 	}
-	tmp_write = write(STDOUT_FILEON, buffer, tmp_pd);
+	tmp_write = write(STDOUT_FILEON, buffer, tmp_read);
 	if (tmp_write == -1)
 	{
 		free(buffer);
