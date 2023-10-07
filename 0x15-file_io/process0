@@ -1,0 +1,35 @@
+#include "main.h"
+
+ssize_t read_textfile(const char *filename, size_t letters)
+{
+* create an integer variable int  tmp_fd
+* create a variable for read and for write ssize tmp_read, tmp_write
+* create a buffer for storing the letters. const *buffer
+
+* check if the pointer (*filename) exits
+if it doesn't, return (0);
+
+* go ahead and open the file using tmp_fd = open(filename(the pointer), O_RDONLY(if it is to read only)
+check if the variable is NULL if (tmp_pd == -1)
+then return (0)
+
+*allocate a space for the buffer buffer = malloc(sizeof(char) * letters);
+check if the space is alloctated if (buffer == NULL) then return (0);
+
+* READ 
+to read the letters, use tmp_read = read(tmp_pd, buffer, letters);
+if (tmp_read == -1) (if it cannot be read)
+free the buffer
+close the opened variable (close tmp_pd)
+return (0);
+
+* WRITE
+to write the required letters, use tmp_write = write(STDOUT_FILENO, buffer, tmp_read);
+if it cannot write if (tmp_write == -1)
+free the buffer
+close the variable tmp_pd
+return (0);
+
+* if everything works well close the variable tmp_pd
+return the tmp_read
+
